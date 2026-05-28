@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <title>dating-docs — merge mark</title>
+  <!-- two heads (authors) -> merge node (the bond) -> trunk (the couple-doc) -->
+  <g fill="none" stroke="#14110E" stroke-width="32" stroke-linecap="butt" stroke-linejoin="miter">
+    <path d="M300 300 L512 560"/>
+    <path d="M724 300 L512 560"/>
+    <path d="M512 560 L512 768"/>
+  </g>
+  <g fill="#14110E">
+    <rect x="276" y="276" width="48" height="48"/>
+    <rect x="700" y="276" width="48" height="48"/>
+  </g>
+  <rect x="482" y="530" width="60" height="60" fill="#8A2B2B"/>
+</svg>

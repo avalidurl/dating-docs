@@ -1,0 +1,32 @@
+/* dating-docs — brand tokens (DD-09)
+   1-bit master + one data-ink accent. Discipline: black on bone, one madder accent,
+   gray for apparatus. A second accent is a chart color, never a brand color. */
+
+:root {
+  /* palette */
+  --dd-ink:        #14110E;  /* warm near-black: text, marks */
+  --dd-paper:      #F3EEE3;  /* bone manuscript ground */
+  --dd-madder:     #8A2B2B;  /* THE accent: the merge node, the single stroke of love (<=10% of any surface) */
+  --dd-margin:     #8C857A;  /* annotation gray: metadata, rules, captions */
+  --dd-committed:  #2E3A52;  /* DATA ONLY: muted indigo for 'committed' state in charts; never chrome */
+
+  /* type */
+  --dd-mono: 'IBM Plex Mono', 'Berkeley Mono', 'Menlo', ui-monospace, monospace;
+  --dd-serif: 'IBM Plex Serif', Georgia, serif; /* long-form datingdoc letter bodies only */
+
+  /* apparatus */
+  --dd-rule: 1px solid var(--dd-margin);
+  --dd-frame: 4px solid var(--dd-ink);
+}
+
+/* default surface */
+body.dd {
+  background: var(--dd-paper);
+  color: var(--dd-ink);
+  font-family: var(--dd-mono);
+  font-feature-settings: "ss01";
+}
+
+.dd-accent { color: var(--dd-madder); }
+.dd-meta   { color: var(--dd-margin); }
+.dd-letter { font-family: var(--dd-serif); max-width: 62ch; line-height: 1.6; } /* the love-letter measure */

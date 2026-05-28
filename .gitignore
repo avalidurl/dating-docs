@@ -1,0 +1,32 @@
+# dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# build
+dist/
+build/
+.wrangler/
+.dev.vars
+
+# secrets — never commit
+.env
+.env.*
+*.key
+*.pem
+secrets/
+wrangler.toml.local
+
+# os / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# logs
+*.log
+npm-debug.log*
+
+# brand raster output is regenerable from SVG; keep SVG, ignore scratch
+brand/*.tmp.png
